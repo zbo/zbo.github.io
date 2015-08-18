@@ -3,7 +3,7 @@
 <head>
 
   <meta charset="UTF-8">
-  <title>Solar Theme</title>
+  <title>Singleton creation</title>
   <meta name="viewport" content="width=device-width">
 
   <!--[if lt IE 9]>
@@ -45,15 +45,13 @@
 
 
     <div id="content">
-      
+      <article class="post">
 
-	<article class="post">
+	
+		<h1><a href="/2015/08/14/a-demo-blog/">Singleton creation</a></h1>
+	
 
-		
-			<h1><a href="/2015/08/14/a-demo-blog/">Singleton creation</a></h1>
-		
-
-		<div class="post-content"><p>this is the code I use to create singleton, but missing one volatile,
+	<div class="post-content"><p>this is the code I use to create singleton, but missing one volatile,
 this article point out: java byte code might be rearranged to improve performance.
 so if no volatile keywords, the instance could be not none, but memory still not allocated.</p>
 
@@ -73,13 +71,9 @@ so if no volatile keywords, the instance could be not none, but memory still not
 
 </div>
 
-	</article>
+	<p class="meta">Posted on <span class="postdate">Aug 14, 2015</span></p>
 
-
-
-
-
-
+</article>
     </div>
 
 
