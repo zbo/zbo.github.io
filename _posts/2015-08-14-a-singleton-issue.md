@@ -25,4 +25,13 @@ private volatile static Instance instance;
         }
 }
 {% endhighlight %}
+<p></p>
+which means, following two statement could be both true.
+{% highlight java %}
+instance!=null
+instance have no memory connected
+{% endhighlight %}
+<p></p>
+this could mess your plate.
+
 [this article]: http://www.infoq.com/cn/articles/double-checked-locking-with-delay-initialization/

@@ -26,6 +26,15 @@ so if no volatile keywords, the instance could be not none, but memory still not
         &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;which means, following two statement could be both true.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;have&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;no&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;memory&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;connected&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;this could mess your plate.&lt;/p&gt;
+
 </description>
 				<pubDate>Fri, 14 Aug 2015 13:06:00 +0800</pubDate>
 				<link>http://zbo.github.io/2015/08/14/a-singleton-issue/</link>
