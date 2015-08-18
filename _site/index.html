@@ -36,7 +36,7 @@
           <li><a href="/">Home</a></li>
           <li><a href="/archives">Archive</a></li>
           <li><a href="/about">About</a></li>
-          <li><a href="http://twitter.com/redwall_hp">Twitter</a></li>
+          <li><a href="http://www.linkedin.com/profile/view?id=84924472">Linked In</a></li>
           <li><a href="/feed.xml">RSS Feed</a></li>
         </ul>
       </nav>
@@ -50,11 +50,11 @@
 	<article class="post">
 
 		
-			<h1><a href="/2015/08/14/a-demo-blog/">Singleton creation</a></h1>
+			<h1><a href="/2015/08/14/a-singleton-issue/">Singleton creation</a></h1>
 		
 
 		<div class="post-content"><p>this is the code I use to create singleton, but missing one volatile,
-this article point out: java byte code might be rearranged to improve performance.
+<a href="http://www.infoq.com/cn/articles/double-checked-locking-with-delay-initialization/">this article</a> point out: java byte code might be rearranged to improve performance.
 so if no volatile keywords, the instance could be not none, but memory still not allocated.</p>
 
 <div class="highlight"><pre><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">SafeDoubleCheckedLocking</span> <span class="o">{</span>

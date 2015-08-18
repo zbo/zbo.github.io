@@ -9,7 +9,7 @@
 			<item>
 				<title>Singleton creation</title>
 				<description>&lt;p&gt;this is the code I use to create singleton, but missing one volatile,
-this article point out: java byte code might be rearranged to improve performance.
+&lt;a href=&quot;http://www.infoq.com/cn/articles/double-checked-locking-with-delay-initialization/&quot;&gt;this article&lt;/a&gt; point out: java byte code might be rearranged to improve performance.
 so if no volatile keywords, the instance could be not none, but memory still not allocated.&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SafeDoubleCheckedLocking&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
@@ -28,8 +28,8 @@ so if no volatile keywords, the instance could be not none, but memory still not
 
 </description>
 				<pubDate>Fri, 14 Aug 2015 13:06:00 +0800</pubDate>
-				<link>http://zbo.github.io/2015/08/14/a-demo-blog/</link>
-				<guid isPermaLink="true">http://zbo.github.io/2015/08/14/a-demo-blog/</guid>
+				<link>http://zbo.github.io/2015/08/14/a-singleton-issue/</link>
+				<guid isPermaLink="true">http://zbo.github.io/2015/08/14/a-singleton-issue/</guid>
 			</item>
 		
 	</channel>

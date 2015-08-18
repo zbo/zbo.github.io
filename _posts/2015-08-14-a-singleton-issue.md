@@ -7,7 +7,7 @@ published: true
 ---
 
 this is the code I use to create singleton, but missing one volatile,
-this article point out: java byte code might be rearranged to improve performance.
+[this article] point out: java byte code might be rearranged to improve performance.
 so if no volatile keywords, the instance could be not none, but memory still not allocated.
 
 {% highlight java %}
@@ -25,3 +25,4 @@ private volatile static Instance instance;
         }
 }
 {% endhighlight %}
+[this article]: http://www.infoq.com/cn/articles/double-checked-locking-with-delay-initialization/
