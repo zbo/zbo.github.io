@@ -7,13 +7,29 @@
 		<atom:link href="http://zbo.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Static web generation</title>
+				<description>&lt;p&gt;from the moment I start to blog github, I noticed static web generation could be something good in future.
+actually after diving into it a while, this is not any new technology. from 2013 there have been people talking
+using &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;jekyll&lt;/a&gt;, and today I find more alternatives, like &lt;a href=&quot;http://webgen.gettalong.org/&quot;&gt;webgen&lt;/a&gt;, and even place like &lt;a href=&quot;https://www.staticgen.com/&quot;&gt;staticgen&lt;/a&gt; collect
+almost all types of static generation available in the market.&lt;/p&gt;
+&lt;p /&gt;
+
+&lt;p&gt;most of them rubys, fine.&lt;/p&gt;
+
+</description>
+				<pubDate>Wed, 19 Aug 2015 10:06:00 +0800</pubDate>
+				<link>http://zbo.github.io/2015/08/19/static-web-generation/</link>
+				<guid isPermaLink="true">http://zbo.github.io/2015/08/19/static-web-generation/</guid>
+			</item>
+		
+			<item>
 				<title>Python Reverse Polish Notation</title>
 				<description>&lt;p&gt;yesterday one of my colleagues raise this with performance issue.
 &lt;strong&gt;python&lt;/strong&gt;&lt;/p&gt;
 </description>
-				<pubDate>Fri, 14 Aug 2015 13:06:00 +0800</pubDate>
-				<link>http://zbo.github.io/2015/08/14/python-calculation/</link>
-				<guid isPermaLink="true">http://zbo.github.io/2015/08/14/python-calculation/</guid>
+				<pubDate>Sat, 15 Aug 2015 19:00:00 +0800</pubDate>
+				<link>http://zbo.github.io/2015/08/15/python-calculation/</link>
+				<guid isPermaLink="true">http://zbo.github.io/2015/08/15/python-calculation/</guid>
 			</item>
 		
 			<item>
