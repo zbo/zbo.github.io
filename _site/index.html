@@ -50,6 +50,47 @@
 	<article class="post">
 
 		
+			<h1><a href="/2015/08/26/virtualbox-extension-kernel/">Virtual box and extension kernel source</a></h1>
+		
+
+		<div class="post-content"><p>virtual box is so common tool we setup parasitic system of multiple platform. extension is something you canot live without. it offer you possibility of full screen, darg drop sharing and many cool features too. which I believe everyone with virtual box should install by a simple click.<br />
+but on the way, you may meet missing kernel source missing errors. you normally find this from <strong>/var/log/vboxinstall.log</strong></p>
+<p />
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="err">$</span> <span class="n">sudo</span> <span class="n">yum</span> <span class="n">update</span>
+
+<span class="err">$</span> <span class="n">sudo</span> <span class="n">yum</span> <span class="n">install</span> <span class="n">kernel</span><span class="o">-</span><span class="n">devel</span> <span class="n">gcc</span>
+<span class="err">$</span> <span class="n">export</span> <span class="n">KERN_DIR</span><span class="o">=/</span><span class="n">usr</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">kernels</span><span class="o">/</span></code></pre></div>
+
+<p />
+
+<p>you need <code>reboot</code> to load updated kernel to match kernel source code.
+afterwards, run the VBoxLinux***Install.sh again.<br /> 
+it still not work. openGL build modules failed.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="err">$</span> <span class="n">cd</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">kernels</span><span class="o">/</span><span class="mf">2.6</span><span class="o">.</span><span class="mi">32</span><span class="o">-</span><span class="mf">431.</span><span class="n">el6</span><span class="o">.</span><span class="n">i686</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">drm</span><span class="o">/</span>  
+<span class="err">$</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">drm</span><span class="o">/</span><span class="n">drm</span><span class="o">.</span><span class="n">h</span> <span class="n">drm</span><span class="o">.</span><span class="n">h</span>  
+<span class="err">$</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">drm</span><span class="o">/</span><span class="n">drm_sarea</span><span class="o">.</span><span class="n">h</span> <span class="n">drm_sarea</span><span class="o">.</span><span class="n">h</span>  
+<span class="err">$</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">drm</span><span class="o">/</span><span class="n">drm_mode</span><span class="o">.</span><span class="n">h</span> <span class="n">drm_mode</span><span class="o">.</span><span class="n">h</span>  
+<span class="err">$</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">drm</span><span class="o">/</span><span class="n">drm_fourcc</span><span class="o">.</span><span class="n">h</span> <span class="n">drm_fourcc</span><span class="o">.</span><span class="n">h</span>
+
+<span class="n">export</span> <span class="n">MAKE</span><span class="o">=</span><span class="s">&#39;/usr/bin/gmake -i&#39;</span></code></pre></div>
+
+<p />
+
+<p>reboot again.<br />
+try install again.<br />
+finally works #_#!</p>
+
+</div>
+
+	</article>
+
+
+
+	<article class="post">
+
+		
 			<h1><a href="/2015/08/19/static-web-generation/">Static web generation</a></h1>
 		
 
