@@ -7,6 +7,33 @@
 		<atom:link href="http://zbo.github.io/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>rbenv usage control ruby versions</title>
+				<description>&lt;p&gt;&lt;strong&gt;rbenv&lt;/strong&gt; is tool to control versions&lt;/p&gt;
+&lt;p /&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;rbenv&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;＃&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;rbenv&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;shell&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;  &lt;span class=&quot;err&quot;&gt;＃&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;RBENV_VERSION&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;rbenv&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;local&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;  &lt;span class=&quot;err&quot;&gt;＃&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rbenv&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;floder&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p /&gt;
+
+&lt;p&gt;make it work by adding folloing @ bottom of your rc profile
+you have to rehash everytime you change&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;PATH&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;$HOME/.rbenv/bin:$PATH&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;eval&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;$(rbenv init -)&amp;quot;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;plus&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rbenv&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rehash&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;LMXMN031&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bob&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zhu&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ruby&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p545&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2014&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;02&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;revision&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;45159&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x86_64&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;darwin14&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</description>
+				<pubDate>Wed, 26 Aug 2015 23:31:00 +0800</pubDate>
+				<link>http://zbo.github.io/2015/08/26/rbenv-control-ruby-versions/</link>
+				<guid isPermaLink="true">http://zbo.github.io/2015/08/26/rbenv-control-ruby-versions/</guid>
+			</item>
+		
+			<item>
 				<title>Virtual box and extension kernel source</title>
 				<description>&lt;p&gt;virtual box is so common tool we setup parasitic system of multiple platform. extension is something you canot live without. it offer you possibility of full screen, darg drop sharing and many cool features too. which I believe everyone with virtual box should install by a simple click.&lt;br /&gt;
 but on the way, you may meet missing kernel source missing errors. you normally find this from &lt;strong&gt;/var/log/vboxinstall.log&lt;/strong&gt;&lt;/p&gt;

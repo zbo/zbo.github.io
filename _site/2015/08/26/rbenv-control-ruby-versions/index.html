@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>rbenv usage control ruby versions</title>
+  <meta name="viewport" content="width=device-width">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link href="/assets/css/style.css" rel="stylesheet" />
+  <link href="/assets/css/colors-dark.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+
+  <header id="header">
+    <h1><a href="/"><i class="icon-sun"></i> developer bob</a></h1>
+    <p>A blog recording code and more...</p>
+  </header>
+
+
+
+  <div id="page">
+
+
+
+    <div id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/archives">Archive</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="http://www.linkedin.com/profile/view?id=84924472">Linked In</a></li>
+          <li><a href="/feed.xml">RSS Feed</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+
+    <div id="content">
+      <article class="post">
+
+	
+		<h1><a href="/2015/08/26/rbenv-control-ruby-versions/">rbenv usage control ruby versions</a></h1>
+	
+
+	<div class="post-content"><p><strong>rbenv</strong> is tool to control versions</p>
+<p />
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">rbenv</span> <span class="n">global</span> <span class="n">version</span> <span class="err">＃</span><span class="n">global</span> <span class="n">ruby</span>
+<span class="n">rbenv</span> <span class="n">shell</span> <span class="n">version</span>  <span class="err">＃</span><span class="no">RBENV_VERSION</span>
+<span class="n">rbenv</span> <span class="n">local</span> <span class="n">version</span>  <span class="err">＃</span><span class="o">.</span><span class="n">rbenv</span><span class="o">-</span><span class="n">version</span> <span class="n">file</span> <span class="k">in</span> <span class="n">floder</span></code></pre></div>
+
+<p />
+
+<p>make it work by adding folloing @ bottom of your rc profile
+you have to rehash everytime you change</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">export</span> <span class="no">PATH</span><span class="o">=</span><span class="s2">&quot;$HOME/.rbenv/bin:$PATH&quot;</span>
+<span class="nb">eval</span> <span class="s2">&quot;$(rbenv init -)&quot;</span>
+
+<span class="n">plus</span> <span class="o">+</span> <span class="n">rbenv</span> <span class="n">rehash</span>
+<span class="ss">LMXMN031</span><span class="p">:</span><span class="o">~</span> <span class="n">bob</span><span class="o">.</span><span class="n">zhu</span><span class="err">$</span> <span class="n">ruby</span> <span class="o">--</span><span class="n">version</span>
+<span class="n">ruby</span> <span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">3</span><span class="n">p545</span> <span class="p">(</span><span class="mi">2014</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mi">24</span> <span class="n">revision</span> <span class="mi">45159</span><span class="p">)</span> <span class="o">[</span><span class="n">x86_64</span><span class="o">-</span><span class="n">darwin14</span><span class="o">.</span><span class="mi">3</span><span class="o">.</span><span class="mi">0</span><span class="o">]</span></code></pre></div>
+
+</div>
+
+	<p class="meta">Posted on <span class="postdate">Aug 26, 2015</span></p>
+
+</article>
+    </div>
+
+
+
+  </div>
+
+
+
+  <footer id="footer">
+    <p class="copyright">Copyright &copy; 2015 developer bob. Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme by <a href="http://www.webmaster-source.com">Matt Harzewski</a></p>
+  </footer>
+
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="/assets/js/jquery.mobilemenu.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
+    });
+  </script>
+
+
+
+</body>
+</html>
