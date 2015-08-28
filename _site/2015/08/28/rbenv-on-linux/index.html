@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>rbenv setup on linux</title>
+  <meta name="viewport" content="width=device-width">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link href="/assets/css/style.css" rel="stylesheet" />
+  <link href="/assets/css/colors-dark.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+
+
+  <header id="header">
+    <h1><a href="/"><i class="icon-sun"></i> developer bob</a></h1>
+    <p>A blog recording code and more...</p>
+  </header>
+
+
+
+  <div id="page">
+
+
+
+    <div id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/archives">Archive</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="http://www.linkedin.com/profile/view?id=84924472">Linked In</a></li>
+          <li><a href="/feed.xml">RSS Feed</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+
+    <div id="content">
+      <article class="post">
+
+	
+		<h1><a href="/2015/08/28/rbenv-on-linux/">rbenv setup on linux</a></h1>
+	
+
+	<div class="post-content"><p><strong>ubuntu</strong> and steps install rbenv
+refer to <a href="http://about.ac/2012/04/install-ruby-with-rbenv.html">article</a></p>
+
+<p />
+
+<p>clone rbenv and setup path:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">git</span> <span class="nb">clone</span> <span class="ss">git</span><span class="p">:</span><span class="sr">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">sstephenson</span><span class="o">/</span><span class="n">rbenv</span><span class="o">.</span><span class="n">git</span> <span class="o">~</span><span class="sr">/.rbenv</span>
+<span class="sr">echo &#39;export PATH=&quot;$HOME/</span><span class="o">.</span><span class="n">rbenv</span><span class="o">/</span><span class="ss">bin</span><span class="p">:</span><span class="vg">$PATH</span><span class="s2">&quot;&#39; &gt;&gt; ~/.bashrc</span>
+<span class="s2">echo &#39;eval &quot;</span><span class="err">$</span><span class="p">(</span><span class="n">rbenv</span> <span class="n">init</span> <span class="o">-</span><span class="p">)</span><span class="s2">&quot;&#39; &gt;&gt; ~/.bashrc</span></code></pre></div>
+
+<p />
+
+<p>clone rb build plugin</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">mkdir</span> <span class="o">-</span><span class="nb">p</span> <span class="o">~</span><span class="sr">/.rbenv/</span><span class="n">plugins</span>
+<span class="n">cd</span> <span class="o">~</span><span class="sr">/.rbenv/</span><span class="n">plugins</span>
+<span class="n">git</span> <span class="nb">clone</span> <span class="ss">git</span><span class="p">:</span><span class="sr">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">sstephenson</span><span class="o">/</span><span class="n">ruby</span><span class="o">-</span><span class="n">build</span><span class="o">.</span><span class="n">git</span></code></pre></div>
+
+</div>
+
+	<p class="meta">Posted on <span class="postdate">Aug 28, 2015</span></p>
+
+</article>
+    </div>
+
+
+
+  </div>
+
+
+
+  <footer id="footer">
+    <p class="copyright">Copyright &copy; 2015 developer bob. Powered by <a href="http://jekyllrb.com">Jekyll</a>, theme by <a href="http://www.webmaster-source.com">Matt Harzewski</a></p>
+  </footer>
+
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="/assets/js/jquery.mobilemenu.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
+    });
+  </script>
+
+
+
+</body>
+</html>

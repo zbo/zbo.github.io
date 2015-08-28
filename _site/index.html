@@ -50,6 +50,37 @@
 	<article class="post">
 
 		
+			<h1><a href="/2015/08/28/rbenv-on-linux/">rbenv setup on linux</a></h1>
+		
+
+		<div class="post-content"><p><strong>ubuntu</strong> and steps install rbenv
+refer to <a href="http://about.ac/2012/04/install-ruby-with-rbenv.html">article</a></p>
+
+<p />
+
+<p>clone rbenv and setup path:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">git</span> <span class="nb">clone</span> <span class="ss">git</span><span class="p">:</span><span class="sr">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">sstephenson</span><span class="o">/</span><span class="n">rbenv</span><span class="o">.</span><span class="n">git</span> <span class="o">~</span><span class="sr">/.rbenv</span>
+<span class="sr">echo &#39;export PATH=&quot;$HOME/</span><span class="o">.</span><span class="n">rbenv</span><span class="o">/</span><span class="ss">bin</span><span class="p">:</span><span class="vg">$PATH</span><span class="s2">&quot;&#39; &gt;&gt; ~/.bashrc</span>
+<span class="s2">echo &#39;eval &quot;</span><span class="err">$</span><span class="p">(</span><span class="n">rbenv</span> <span class="n">init</span> <span class="o">-</span><span class="p">)</span><span class="s2">&quot;&#39; &gt;&gt; ~/.bashrc</span></code></pre></div>
+
+<p />
+
+<p>clone rb build plugin</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">mkdir</span> <span class="o">-</span><span class="nb">p</span> <span class="o">~</span><span class="sr">/.rbenv/</span><span class="n">plugins</span>
+<span class="n">cd</span> <span class="o">~</span><span class="sr">/.rbenv/</span><span class="n">plugins</span>
+<span class="n">git</span> <span class="nb">clone</span> <span class="ss">git</span><span class="p">:</span><span class="sr">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">sstephenson</span><span class="o">/</span><span class="n">ruby</span><span class="o">-</span><span class="n">build</span><span class="o">.</span><span class="n">git</span></code></pre></div>
+
+</div>
+
+	</article>
+
+
+
+	<article class="post">
+
+		
 			<h1><a href="/2015/08/26/rbenv-control-ruby-versions/">rbenv usage control ruby versions</a></h1>
 		
 
